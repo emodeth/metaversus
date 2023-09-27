@@ -7,6 +7,7 @@ import { navVariants } from "../utils/motion";
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
+    viewport={{ once: true }}
     initial="hidden"
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
